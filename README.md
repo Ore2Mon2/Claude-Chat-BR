@@ -13,7 +13,7 @@ AWS Bedrock の Claude Sonnet / Haiku が使えるデスクトップチャット
 -  Temperature を変更したい。
 -  このくらいのシンプルなのでいいんだよ。
 
-といった、個人や小規模なチームの向けに。
+といった、個人や小規模なチーム向けに。
 
 <p align="center">
   <img src="assets/ScreenShot-01.png" width="512" alt="ScreenShot-01">
