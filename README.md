@@ -6,7 +6,7 @@
 </p>
 
 ## 概要
-AWS Bedrock の Claude Sonnet / Haiku が使えるデスクトップチャットアプリケーションです。
+AWS Bedrock Claude 用デスクトップチャットアプリケーションです。
 -  自分専用の Claude が使いたい。
 -  使った分だけ支払いたい。
 -  Web検索連動(Tavily)くらいはあった方がいい。
