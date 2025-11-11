@@ -1,5 +1,5 @@
 # Claude-Chat-BR
-## Claude Chat Bedrock Edition（CCBE）
+## Claude Chat Bedrock Edition
 
 <p align="center">
   <img src="assets/icon-claude-chat-br.png" width="128" alt="Claude-Chat-BR Icon">
