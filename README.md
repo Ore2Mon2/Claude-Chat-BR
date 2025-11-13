@@ -16,7 +16,7 @@ AWS Bedrock Claude 用デスクトップチャットアプリケーションで�
 といった、個人や小規模なチーム向けに。
 
 <p align="center">
-  <img src="assets/ScreenShot-01.png" width="512" alt="ScreenShot-01">
+  <img src="assets/ScreenShot-Mac.png" width="512" alt="ScreenShot-Mac">
 </p>
 
 ---
