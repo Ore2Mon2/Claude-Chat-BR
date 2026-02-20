@@ -144,18 +144,28 @@ xattr -d com.apple.quarantine /Applications/Claude-Chat-BR.app
    {
      "Version": "2012-10-17",
      "Statement": [
-       {
-         "Sid": "BedrockInvokeModel",
-         "Effect": "Allow",
-         "Action": [
+        {
+          "Sid": "MarketPlaceAccess",
+          "Effect": "Allow",
+          "Action": [
+              "aws-marketplace:ViewSubscriptions",
+              "aws-marketplace:Subscribe",
+              "aws-marketplace:Unsubscribe"
+          ],
+          "Resource": "*"
+        },   
+        {
+          "Sid": "BedrockInvokeModel",
+          "Effect": "Allow",
+          "Action": [
            "bedrock:InvokeModel",
            "bedrock:InvokeModelWithResponseStream"
-         ],
-         "Resource": [
+          ],
+          "Resource": [
            "arn:aws:bedrock:*::foundation-model/*",
            "arn:aws:bedrock:*:*:inference-profile/*"
          ]
-       }
+        }
      ]
    }
    ```
@@ -166,26 +176,36 @@ xattr -d com.apple.quarantine /Applications/Claude-Chat-BR.app
    {
      "Version": "2012-10-17",
      "Statement": [
-       {
-         "Sid": "BedrockInvokeModel",
-         "Effect": "Allow",
-         "Action": [
+        {
+          "Sid": "MarketPlaceAccess",
+          "Effect": "Allow",
+          "Action": [
+              "aws-marketplace:ViewSubscriptions",
+              "aws-marketplace:Subscribe",
+              "aws-marketplace:Unsubscribe"
+          ],
+          "Resource": "*"
+        },   
+        {
+          "Sid": "BedrockInvokeModel",
+          "Effect": "Allow",
+          "Action": [
            "bedrock:InvokeModel",
            "bedrock:InvokeModelWithResponseStream"
-         ],
-         "Resource": [
+          ],
+          "Resource": [
            "arn:aws:bedrock:*::foundation-model/*",
            "arn:aws:bedrock:*:*:inference-profile/*"
          ]
-       },
-       {
-         "Sid": "TranscribeStreamAccess",
-         "Effect": "Allow",
-         "Action": [
+        },
+        {
+          "Sid": "TranscribeStreamAccess",
+          "Effect": "Allow",
+          "Action": [
            "transcribe:StartStreamTranscription"
-         ],
-         "Resource": "*"
-       }
+          ],
+          "Resource": "*"
+        }
      ]
    }
    ```
@@ -244,10 +264,11 @@ xattr -d com.apple.quarantine /Applications/Claude-Chat-BR.app
 
 #### 5. 利用可能なモデル ID の確認
 
-以下は代表的なモデル ID の例です（2025年11月時点）：
+以下は代表的なモデル ID の例です（2026年 2月時点）：
 
 | モデル名 | モデル ID | 用途 |
 |---------|----------|------|
+| Claude Sonnet 4.6 | `jp.anthropic.claude-sonnet-4-6` | 高性能な会話・分析 |
 | Claude Sonnet 4.5 | `jp.anthropic.claude-sonnet-4-5-20250929-v1:0` | 高性能な会話・分析 |
 | Claude Haiku 4.5 | `jp.anthropic.claude-haiku-4-5-20251001-v1:0` | 高速・低コストな応答 |
 
